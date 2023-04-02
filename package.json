@@ -11,7 +11,9 @@
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",
     "bootstrap-vue": "^2.23.1",
-    "vue": "^3.2.47"
+    "chart.js": "^4.2.1",
+    "vue": "^3.2.47",
+    "vue-chartjs": "^5.2.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
