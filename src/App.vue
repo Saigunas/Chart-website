@@ -33,18 +33,18 @@
     </div>
 
     <footer class="footer bg-dark text-white py-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 d-flex align-items-center gap-2">
-            <a href="https://github.com/Saigunas/Chart-website"><i class="bi bi-github h3 m-0"></i></a>
-            <span>University project for data visualization</span>
-            <p class="footer-information">Project was made by Karolis, Gvidas, Saigunas.</p>
-          </div>
-          <div class="col-md">
-          </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 d-flex align-items-center gap-2">
+        <a href="https://github.com/Saigunas/Chart-website"><i class="bi bi-github h3 m-0"></i></a>
+        <span>University project for data visualization</span>
       </div>
-    </footer>
+      <div class="col-md-6 d-flex align-items-center justify-content-end">
+        <span class="footer-information" style="margin-left: auto">Project was made by Karolis, Gvidas, Saigunas.</span>
+      </div>
+    </div>
+  </div>
+</footer>
   </div>
 </template>
 
@@ -55,10 +55,6 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-}
-.footer-information{
-  position:relative;
-  left: 750px;
 }
 
 .navbar-nav a:hover {
