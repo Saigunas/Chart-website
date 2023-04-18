@@ -1,7 +1,7 @@
 <template>
     <div class="card w-75">
       <div class="card-header">
-        <span>Title TV ratings by year</span>
+        <span>Total Title TV ratings till year 2020</span>
       </div>
       <div class="card-body">
         <bar

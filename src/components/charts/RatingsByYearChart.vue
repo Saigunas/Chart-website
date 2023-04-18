@@ -77,6 +77,9 @@ function makeChart(netflixTitles) {
   var titlesRating = netflixTitles.map(function (d) {
     return d.rating;
   });
+  var ratingYears = netflixTitles.map(function (d) {
+    return d.release_year;
+  });
 
   const ratingsByYear = [];
 
@@ -104,6 +107,13 @@ function makeChart(netflixTitles) {
   
   // Set labels to unique values
   chartOptions.scales.y.labels = titlesRating.filter((x, i, a) => a.indexOf(x) == i);
+  chartOptions.scales.x.labels = ratingYears
+    .filter((x, i, a) => {
+        return a.indexOf(x) == i && x >= 2000
+      })
+    .sort(function(a, b) {
+      return a - b;
+    });
   console.log(ratingsByYearOver50);
   chartReady.value = true;
 }

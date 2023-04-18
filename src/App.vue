@@ -10,7 +10,7 @@
   <div id="app-body">
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand ps-4" href="#">
-        <img src="src\assets\chart2.png" alt="Netflix App" />
+        <img src="./assets/chart2.png" alt="Netflix App" />
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
