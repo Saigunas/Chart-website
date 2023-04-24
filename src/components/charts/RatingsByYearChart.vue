@@ -17,7 +17,6 @@
 import { ref, reactive, onMounted } from 'vue'
 import { Bar, Bubble } from 'vue-chartjs'
 import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale, PointElement } from 'chart.js'
-import * as d3 from 'd3';
 
 let chartReady = ref(false);
 
@@ -96,11 +95,11 @@ function makeChart(netflixTitles) {
       }
     }
   });
-
+  
+  const ratingsByYearUnder50 = ratingsByYear.filter(d => d.r < 50);
   const ratingsByYearOver50 = ratingsByYear
     .filter(d => d.r > 50)
     .map(d => {d.r = d.r / 10; return d;});
-  const ratingsByYearUnder50 = ratingsByYear.filter(d => d.r < 50);
 
   chartData.datasets[0].data = ratingsByYearOver50;
   chartData.datasets[1].data = ratingsByYearUnder50;

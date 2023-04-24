@@ -1,9 +1,9 @@
 <template>
     <div class="card w-75">
       <div class="card-header">
-        <span>Total Title TV ratings till year 2020</span>
+        <span>All time total Title TV ratings</span>
       </div>
-      <div class="card-body">
+      <div class="card-body" style="height: 20rem">
         <bar
             v-if="chartReady"
             :options="chartOptions"
@@ -17,7 +17,6 @@
 import { ref, reactive, onMounted } from 'vue'
 import { Bar } from 'vue-chartjs'
 import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale, PointElement } from 'chart.js'
-import * as d3 from 'd3';
 
 let chartReady = ref(false);
 
@@ -41,6 +40,7 @@ let chartData = {
 
 const chartOptions = {
   responsive: true,
+  maintainAspectRatio: false,
   scales: {
     x: {
       type: 'category',
