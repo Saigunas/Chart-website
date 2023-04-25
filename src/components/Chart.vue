@@ -1,6 +1,6 @@
 <template>
   <div class='w-100 d-flex flex-column align-items-center gap-4 my-4'>
-    <h4>Data analysis for 1925 - 2019</h4>
+    <h4>Data analysis for 1925 - 2020</h4>
     <ratings-count-chart
       v-if="dataSetReady"
       :data="chartData"
@@ -30,7 +30,7 @@ d3.csv("src/assets/netflix_titles2.csv").then(prepareData);
 
 function prepareData(data) {
   data = data.filter((d) => {
-    return d.release_year < 2020;
+    return d.release_year <= 2020;
   });
   chartData.value = data;
   dataSetReady.value = true;
