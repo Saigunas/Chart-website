@@ -19,8 +19,8 @@
     
     <div class="about-border"></div>
       <p>
-        Head over the <a @click="activeTab = 'Chart'" class="chart-view" href="#">Chart</a>  tab to check our Charts made about Netflix viewership, where we've visualized almost a decade worth of Information
-        About User's activity, country population, most popular genres and many more!
+        Head over the <a @click="activeTab = 'Chart'" class="chart-view" href="#">Chart</a>  tab to check our Charts made about Netflix viewership, where we've visualized and analysed almost a decade worth of Information
+        about Movies and TV shows on Netflix
         <chart v-if="activeTab === 'Chart'"/>
     </p>
   </div>
